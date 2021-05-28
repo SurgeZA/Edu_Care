@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+    height:119vh;
+}
+
+.wrapper{
+    background: url(bg-img.jpg) no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+.navbar{
+    height: 95px;
+    width: 100%;
+    background: rgb(0 , 0, 0, 0.4);
+}
+
+.logo{
+    /* width: 200px; */
+    height: auto;
+    padding: 20px 100px;
+    font-size: 35px;
+    color: white;
+    float: left;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px ;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 90px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 13px;
+    font-family: "Roboto", sans-serif;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: #c00 ;
+    border-radius: 2px;
+    border-color: #c00;
+}
+
+.wrapper .center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1{
+   color: white;
+   font-size: 70px;
+   font-weight: bold;
+   width: 900px;
+   text-align: center; 
+   /* margin-left: 200px; */
+}
+
+.center h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center; 
+ }
+ 
+ .center .buttons{
+     margin: 35px 260px;
+ }
+
+ .buttons button{
+     height: 50px;
+     width: 150px;
+     font-size: 18px;
+     font-weight: bold;
+     color: #ffb3b3;
+     background: red;
+     border: 1px solid #cc0000;
+     outline: none;
+     cursor: pointer;
+     border-radius: 25px;
+     transition: .5s;
+ }
+
+ .buttons .btn{
+     margin-left: 25px;
+ }
+
+ .buttons button:hover{
+     background: #cc0000;
+ }
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ede7f6;
+} */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container .sec{
+    margin-right: 30px;
+}
+footer .container .sec.aboutus{
+    width: 40%;
+}
+footer .container h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+footer .container h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .sec.aboutus p{
+    color: #999;
+}
+
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fab{
+    color:#fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+    color: #fff;
+}
+
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0! important;
+}
+
+.contact .info{
+    position: relative;
+}
+
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.contact .info li span{
+    color: #999;
+}
+
+.contact .info li a{
+color: #999;
+text-decoration: none;
+}
+
+.contact .info li a:hover{
+    color: #fff;
+}
+.copyrightText{
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center ;
+    color: #999;
+}
+@media (max-width: 991px)
+{
+    footer{
+        padding: 40px;
+    }
+
+    footer .container
+    {
+        flex-direction: column;
+    }
+    footer .container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container .sec.aboutus, .quickLinks, .contact{
+        width:100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
+}
